@@ -2,29 +2,24 @@
 
 ## Overview
 
-This repo provides students with a foundation for their own projects associated with *Telling Stories with Data*. You do not need every aspect for every paper and you should delete aspects that you do not need.
+This repository provides an analysis of marriage license statistics from various civic centers across a major city from 2011 to 2024. The data is used to examine trends, seasonal variations, and civic center comparisons. This project is part of the Telling Stories with Data course, and the analysis results are presented in a Quarto-generated report.
 
 
 ## File Structure
 
-The repo is structured as:
+The repo is structured as follows:
 
--   `data/raw_data` contains the raw data as obtained from X.
--   `data/analysis_data` contains the cleaned dataset that was constructed.
--   `model` contains fitted models. 
--   `other` contains relevant literature, details about LLM chat interactions, and sketches.
--   `paper` contains the files used to generate the paper, including the Quarto document and reference bibliography file, as well as the PDF of the paper. 
--   `scripts` contains the R scripts used to simulate, download and clean data.
+data/raw_data/: Contains the raw marriage license data obtained from civic centers.
+data/analysis_data/: Contains the cleaned dataset, prepared for analysis.
+models/: Contains fitted models used for analysis (e.g., Poisson regression models).
+other/: Contains relevant literature, reference materials, and notes related to the analysis.
+paper/: Contains the Quarto document, bibliography, and the final PDF report generated from the analysis.
+scripts/: Contains the R scripts used to clean the data, simulate models, and generate figures.
 
 
 ## Statement on LLM usage
 
-Aspects of the code were written with the help of the auto-complete tool, Codriver. The abstract and introduction were written with the help of ChatHorse and the entire chat history is available in inputs/llms/usage.txt.
+Parts of the code and text in this repository were assisted by AI tools. For example:
 
-## Some checks
-
-- [ ] Change the rproj file name so that it's not starter_folder.Rproj
-- [ ] Change the README title so that it's not Starter folder
-- [ ] Remove files that you're not using
-- [ ] Update comments in R scripts
-- [ ] Remove this checklist
+Code suggestions and completions were assisted by Codriver.
+The abstract and introduction were drafted with the help of ChatGPT. The chat history is available in other/llms/usage.txt.
